@@ -1,0 +1,68 @@
+.header {
+  background-color: #131921;
+  display: flex;
+  align-items: center;
+  position: sticky; /* la scroll nu va disparea*/
+  top:0;
+  z-index: 100; /* headerul va fi mereu peste orice*/
+}
+
+.header_logo {
+  margin: 10px 20px 0 10px;
+  width: 100px;
+  object-fit: contain; /* orice s-ar intampla cu dimensiunea broserului, dim imaginii va fi potrivita*/
+}
+
+.header_searchIcon {
+  background-color: orange;
+  padding: 5px;
+  height: 22px !important; /*adaugam important pentru ca cei de la material ui au propriul lor css si asa le zicem sa il suprascrie cu al nostru */
+}
+
+.header_search {
+  display: flex;
+  flex: 1; /* sa ia cat de mult spatiu poate */
+}
+
+.header_searchInput {
+  height: 12px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+}
+
+.header_nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header_link {
+  color: white;
+  text-decoration: none;
+}
+
+.header_option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header_optionLineOne {
+  font-size: 10px;
+}
+
+.header_optionLineTwo {
+  font-size: 13px;
+  font-weight: 800; /*bold*/
+}
+
+.header_optionBasket {
+  display: flex;
+  align-items: center;
+}
+
+.header_basketCount {
+  margin-left: 10px;
+  margin-right: 10px;
+}
